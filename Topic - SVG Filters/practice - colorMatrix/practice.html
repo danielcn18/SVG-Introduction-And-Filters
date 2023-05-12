@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Practice - Applying Color Matrix Filter</title>
+</head>
+<body>
+    <svg width="1525" height="820">
+        <defs>
+            <filter id="colorMatrix">
+                <feColorMatrix
+                type="matrix"
+                values="0 1 0 0 0
+                        0 1 0 0 0
+                        0 1 0 0 0
+                        0 1 0 1 0"/>
+            </filter>
+        </defs>
+        <image xlink:href="images/image1.jpg" width="800" height="400" filter="url(#colorMatrix)"></image>
+    </svg>
+</body>
+</html>

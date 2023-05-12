@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Practice - Applying Gaussian Blur Filter</title>
+</head>
+<body>
+    <svg width="1525" height="820">
+        <defs>
+            <filter id="blur" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+            </filter>
+        </defs>
+        <circle cx="400" cy="300" r="100" style="fill:red;" filter="url(#blur)"></circle>
+    </svg>
+</body>
+</html>

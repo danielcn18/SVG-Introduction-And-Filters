@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Practice - Applying Morphology Filter</title>
+</head>
+<body>
+    <svg width="1525" height="820">
+        <defs>
+            <filter id="morphology">
+                <feMorphology operator="morphology" radius="1" />
+            </filter>
+        </defs>
+        <image xlink:href="images/image1.jpg" width="800" height="400" filter="url(#morphology)"></image>
+    </svg>
+</body>
+</html>
